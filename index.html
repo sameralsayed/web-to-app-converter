@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Convert any website to an app-like interface with ease.">
+    <meta name="keywords" content="web to app, converter, web app, mobile app, web interface">
+    <meta name="author" content="SAMER SAEID">
+    <title>Web to App Converter</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <h1 class="text-center mb-4">🌐 Web to App Converter</h1>
+                <p class="text-center mb-4">Convert any website to an app-like interface in seconds.</p>
+                
+                <div class="card shadow">
+                    <div class="card-body">
+                        <form id="converterForm">
+                            <div class="mb-3">
+                                <label for="websiteUrl" class="form-label">Website URL</label>
+                                <input type="url" class="form-control" id="websiteUrl" placeholder="https://example.com" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Convert to App</button>
+                        </form>
+                        
+                        <div id="result" class="mt-4 d-none">
+                            <h4>Your App Preview:</h4>
+                            <div class="card mt-3">
+                                <div class="card-body">
+                                    <iframe id="appPreview" src="" frameborder="0" class="w-100" style="height: 300px;"></iframe>
+                                </div>
+                            </div>
+                            <a href="#" id="downloadApp" class="btn btn-success mt-3 w-100 d-none">Download App</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="mt-5 py-4 bg-light">
+        <div class="container">
+            <div class="text-center">
+                <p class="mb-0">Made by ♥️ <a href="https://bio.link/samer" target="_blank">SAMER SAEID</a></p>
+                <p class="mt-2">Copyright SAMER SAEID</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
